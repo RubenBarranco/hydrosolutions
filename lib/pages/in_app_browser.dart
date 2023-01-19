@@ -68,7 +68,7 @@ class _InAppBrowserExampleScreenState extends State<InAppBrowserExampleScreen> {
 
   launchWeb() async {
     await widget.browser.openUrlRequest(
-      urlRequest: URLRequest(url: Uri.parse("http://app.hydrosolutions.es/")),
+      urlRequest: URLRequest(url: Uri.parse("https://app.hydrosolutions.es")),
       options: InAppBrowserClassOptions(
         crossPlatform: InAppBrowserOptions(
           toolbarTopBackgroundColor: Colors.blue,
@@ -114,7 +114,7 @@ class _InAppBrowserExampleScreenState extends State<InAppBrowserExampleScreen> {
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/images/drivi.png"),
+                  image: AssetImage("assets/images/launcher_icon.png"),
                   fit: BoxFit.fitWidth),
             ),
             child: CircularProgressIndicator()),
